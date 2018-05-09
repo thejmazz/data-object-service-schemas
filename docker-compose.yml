@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  api:
+    build:
+      context: .
+      target: dev
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/usr/src/app
+
